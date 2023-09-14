@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="bingo.css">
+    <title>BINGO</title>
+</head>
+
+<body class="board">
+    <div style="text-align: center;">
+        <br>
+        <img src="./img/bingo.png">
+    </div>
+    <br>
+    <br>
+    <div class="parent">
+        <a onclick="hole(0)">
+            <div class="child" id="bingo1_1"></div>
+        </a>
+        <a onclick="hole(1)">
+            <div class="child" id="bingo1_2"></div>
+        </a>
+        <a onclick="hole(2)">
+            <div class="child" id="bingo1_3"></div>
+        </a>
+        <a onclick="hole(3)">
+            <div class="child" id="bingo1_4"></div>
+        </a>
+        <a onclick="hole(4)">
+            <div class="child" id="bingo1_5"></div>
+        </a>
+    </div>
+
+    <div class="parent">
+        <a onclick="hole(5)">
+            <div class="child" id="bingo2_1"></div>
+        </a>
+        <a onclick="hole(6)">
+            <div class="child" id="bingo2_2"></div>
+        </a>
+        <a onclick="hole(7)">
+            <div class="child" id="bingo2_3"></div>
+        </a>
+        <a onclick="hole(8)">
+            <div class="child" id="bingo2_4"></div>
+        </a>
+        <a onclick="hole(9)">
+            <div class="child" id="bingo2_5"></div>
+        </a>
+    </div>
+
+    <div class="parent">
+        <a onclick="hole(10)">
+            <div class="child" id="bingo3_1"></div>
+        </a>
+        <a onclick="hole(11)" class="child" id="bingo3_2">
+
+        </a>
+        <a onclick="">
+            <div class="child" id="bingo3_3" style="color: brown;"></div>
+        </a>
+        <a onclick="hole(13)">
+            <div class="child" id="bingo3_4"></div>
+        </a>
+        <a onclick="hole(14)">
+            <div class="child" id="bingo3_5"></div>
+        </a>
+    </div>
+
+    <div class="parent">
+        <a onclick="hole(15)">
+            <div class="child" id="bingo4_1"></div>
+        </a>
+        <a onclick="hole(16)">
+            <div class="child" id="bingo4_2"></div>
+        </a>
+        <a onclick="hole(17)">
+            <div class="child" id="bingo4_3"></div>
+        </a>
+        <a onclick="hole(18)">
+            <div class="child" id="bingo4_4"></div>
+        </a>
+        <a onclick="hole(19)">
+            <div class="child" id="bingo4_5"></div>
+        </a>
+    </div>
+
+    <div class="parent">
+        <a onclick="hole(20)">
+            <div class="child" id="bingo5_1"></div>
+        </a>
+        <a onclick="hole(21)">
+            <div class="child" id="bingo5_2"></div>
+        </a>
+        <a onclick="hole(22)">
+            <div class="child" id="bingo5_3"></div>
+        </a>
+        <a onclick="hole(23)">
+            <div class="child" id="bingo5_4"></div>
+        </a>
+        <a onclick="hole(24)">
+            <div class="child" id="bingo5_5"></div>
+        </a>
+    </div>
+    <h1 class="card">Bingo Card</h1>
+    <button class="card board button" onclick="randomButton()" style="width: 5%; height: 10%;">Random</button>
+    <h2 id="random_button" class="card"></h2>
+    <!--
+    <h1 style="margin-left: 150px;">Bingo Card</h1>
+    <button onclick="randomButton()" style="margin-left: 200px;">Random</button>
+    <h2 id="random_button" style="margin-left: 225px;"></h2>
+    -->
+
+
+    <script src="./bingo.js">
+    </script>
+    <footer class="footer">
+        <p class="copyright">© 2023 akaz,GREEN,Toufu_Studio,solsaliente,Ki2ne,KiBUNE. All Rights Reserved.</p>
+        <ul class="md-flex">
+            <li><a href="./pages/about/about.html">About Me</a></li>
+            <li><a href="https://github.com/akazdayo/Bingo">GitHub</a></li>
+            <li><a href="https://github.com/akazdayo/Bingo/blob/main/license">License</a></li>
+        </ul>
+    </footer>
+</body>
+
+</html>

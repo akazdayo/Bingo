@@ -1,0 +1,114 @@
+.parent {
+    display: flex;
+    justify-content: center;
+}
+
+.child {
+    color: #ffffff;
+    border: solid 1px #573216;
+    text-align: center;
+    line-height: 100px;
+    width: 100px;
+    height: 100px;
+    background:
+        repeating-radial-gradient(circle at -1000% 0%,
+            rgba(116, 77, 48, 0.7),
+            #573216 7.5%,
+            rgba(116, 77, 48, 0.9) 10%),
+        repeating-radial-gradient(circle at -1000% 0%,
+            #573216,
+            #573216 0.1%,
+            #744d30 0.4%,
+            #744d30 0.5%);
+}
+
+.board {
+    background:
+        linear-gradient(90deg,
+            rgba(208, 147, 82, 0.6),
+            rgba(192, 134, 70, 0.6) 60%,
+            rgba(208, 147, 82, 0.6)),
+        repeating-radial-gradient(ellipse at 60% 500%,
+            #c08646,
+            #c08646 0.2%,
+            #d09352 0.6%,
+            #d09352 1%);
+}
+
+html {
+    font-family: sans-serif;
+}
+
+body {
+    background: #333;
+}
+
+a {
+    color: #047e9c;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer {
+    width: 97%;
+    position: absolute;
+    /*←絶対位置*/
+    bottom: 0;
+    /*下に固定*/
+
+    padding: 1rem;
+    font-size: 15px;
+    color: #999;
+    background: #fff;
+    border-top: 1px solid #e5e7eb;
+
+}
+
+.footer a:hover {
+    color: #000;
+}
+
+@media (min-width: 768px) {
+    .footer {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .md-flex {
+        display: flex;
+    }
+
+    .md-flex li+li {
+        margin-left: 16px;
+    }
+}
+
+.wrapper {
+    height: 100%;
+    min-height: 100vh;
+    position: relative;
+    /*←相対位置*/
+    padding-bottom: 120px;
+    /*←footerの高さ*/
+    box-sizing: border-box;
+    /*←全て含めてmin-height:100vhに*/
+}
+
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.button {
+    display: block;
+    margin: 0 auto;
+    width: 10%;
+    height: 15%;
+}

@@ -1,0 +1,119 @@
+.board {
+    background:
+        linear-gradient(90deg,
+            rgba(208, 147, 82, 0.6),
+            rgba(192, 134, 70, 0.6) 60%,
+            rgba(208, 147, 82, 0.6)),
+        repeating-radial-gradient(ellipse at 60% 500%,
+            #c08646,
+            #c08646 0.2%,
+            #d09352 0.6%,
+            #d09352 1%);
+}
+
+/*枠デザイン*/
+.profile_box {
+    margin: 2em 0;
+    position: relative;
+    padding: 0.25em 0;
+    border: solid 2px #ffcb8a;
+    border-radius: 3px 0 3px 0;
+    box-sizing: border-box;
+    max-width: 20em;
+}
+
+.profile_box:before,
+.profile_box:after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border: solid 2px #ffcb8a;
+    border-radius: 50%;
+}
+
+.profile_box:after {
+    top: -12px;
+    left: -12px;
+}
+
+.profile_box:before {
+    bottom: -12px;
+    right: -12px;
+}
+
+.profile_box .box-title {
+    font-size: 18px;
+    line-height: 1.8;
+    background: #f5b25f;
+    /*タイトルの背景色*/
+    padding: 4px;
+    text-align: center;
+    color: #FFF;
+    /*文字色*/
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    border-radius: 8px;
+}
+
+/*内容*/
+.profile_center {
+    text-align: center;
+    margin: 10px 0.1px 0 0;
+}
+
+/*プロフィール画像*/
+.profile_figure {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    /*丸くする*/
+    border: solid 3px #ffcb8a;
+    /*枠線*/
+}
+
+/*名前*/
+.profile_name {
+    padding: 15px 20px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/*自己紹介文*/
+.profile_box p {
+    padding: 15px 20px;
+    margin: 0;
+}
+
+/*リスト*/
+.profile_box ul {
+    padding: 0.5em 1em 0.5em 2.3em;
+    position: relative;
+}
+
+.profile_box ul li {
+    line-height: 1.5;
+    padding: 0.5em 0;
+    list-style-type: none !important;
+}
+
+.profile_box ul li:before {
+    font-family: "Font Awesome 5 Free";
+    content: "f101";
+    /*アイコンの種類*/
+    font-weight: 900;
+    position: absolute;
+    left: 1em;
+    /*左端からのアイコンまでの距離*/
+    color: #ffcb8a;
+    /*アイコン色*/
+}
+
+.left {
+    float: left;
+    margin: 10%;
+}
+
+.clear {
+    clear: both;
+}
